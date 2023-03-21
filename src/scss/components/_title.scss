@@ -1,0 +1,6 @@
+@use "../abstracts/tokens";
+
+.title {
+  font-family: tokens.$titleFontFamily;
+  margin: tokens.$titleMargin;
+}

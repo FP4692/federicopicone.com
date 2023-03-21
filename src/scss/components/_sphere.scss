@@ -1,0 +1,21 @@
+@use "../abstracts/tokens";
+
+.sphere {
+  background: tokens.$sphereBg;
+  border-radius: 50%;
+  box-shadow: tokens.$sphereBoxShadow;
+  height: calc(tokens.$shapeSize * 0.8);
+  position: absolute;
+  right: tokens.$sphereRight;
+  top: tokens.$sphereTop;
+  transition: tokens.$sphereTransition;
+  width: calc(tokens.$shapeSize * 0.8);
+
+  // Sphere hidden on about or skills click
+  [data-section] & {
+    display: none;
+  }
+  [data-section="contact"] & {
+    display: block;
+  }
+}

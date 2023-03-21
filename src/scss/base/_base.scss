@@ -1,0 +1,77 @@
+@use "../abstracts/tokens";
+
+:root {
+  --colorBgPrimary: rgb(37, 41, 50);
+  --colorBgSecondary: rgba(117, 117, 162, 0.6);
+  --colorContent: rgb(255, 255, 255);
+  --colorShadow: rgba(0, 0, 0, 0.2);
+  // Value set on about__btn click
+  --cubeSideTranslateZ: 0rem;
+  // Value set on skills__btn click
+  --pyramidTransform: rotateY(-45deg) rotateZ(-30deg);
+  // Value for cube and sphere
+  --shapeSize: 6.5rem;
+}
+
+body {
+  background: tokens.$bodyBg;
+  color: tokens.$bodyColor;
+  font-family: tokens.$bodyFontFamily;
+  font-size: tokens.$bodyFontSize;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: tokens.$bodyColor;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: tokens.$bodyColor;
+  cursor: pointer;
+  font-family: tokens.$bodyFontFamily;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: tokens.$headerZIndex;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+p {
+  line-height: tokens.$bodyLineHeight;
+}
+
+// On page load only loader and shapes sections are visible
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+
+  & > div {
+    padding: tokens.$sectionContentPadding;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,38 @@
+@use "../abstracts/tokens";
+
+.cursor {
+  border: tokens.$cursorBorder;
+  border-radius: 50%;
+  height: tokens.$cursorSize;
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  // Related to $cursorActiveTransform
+  transform-origin: 150% 150%;
+  // Delay on mouse move
+  transition: tokens.$cursorTransition;
+  width: tokens.$cursorSize;
+  z-index: tokens.$cursorZIndex;
+
+  &::before {
+    background: tokens.$cursorBeforeBg;
+    border-radius: 50%;
+    content: "";
+    height: tokens.$cursorBeforeSize;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: tokens.$cursorBeforeSize;
+  }
+
+  &--active {
+    background: tokens.$cursorActiveBg;
+    mix-blend-mode: soft-light;
+    transform: tokens.$cursorActiveTransform;
+
+    &::before {
+      display: none;
+    }
+  }
+}

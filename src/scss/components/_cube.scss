@@ -1,0 +1,70 @@
+@use "../abstracts/tokens";
+
+.cube__wrapper {
+  bottom: tokens.$cubeWrapperBottom;
+  left: tokens.$cubeWrapperLeft;
+  perspective: tokens.$cubeWrapperPerspective;
+  perspective-origin: tokens.$cubeWrapperPerspectiveOrigin;
+  position: absolute;
+
+  // Cube hidden on skills or contact click
+  [data-section] & {
+    display: none;
+  }
+  [data-section="about"] & {
+    display: block;
+  }
+}
+
+.cube {
+  height: tokens.$shapeSize;
+  position: relative;
+  transform: tokens.$cubeTransform;
+  transform-style: preserve-3d;
+  width: tokens.$shapeSize;
+
+  .cube__side {
+    border: tokens.$cubeSideBorder;
+    height: 100%;
+    position: absolute;
+    transition: tokens.$cubeSideTransition;
+    width: 100%;
+
+    &--back {
+      top: 50%;
+      transform: translateZ(
+        calc((-1 * (tokens.$shapeSize / 2 + tokens.$cubeSideTranslateZ)))
+      );
+    }
+
+    &--bottom {
+      top: 100%;
+      transform: rotateX(90deg)
+        translateZ(calc(-1 * tokens.$cubeSideTranslateZ));
+    }
+
+    &--front {
+      top: 50%;
+      transform: translateZ(
+        calc(tokens.$shapeSize / 2 + tokens.$cubeSideTranslateZ)
+      );
+    }
+
+    &--left {
+      right: 50%;
+      top: 50%;
+      transform: rotateY(90deg)
+        translateZ(calc(-1 * tokens.$cubeSideTranslateZ));
+    }
+
+    &--right {
+      left: 50%;
+      top: 50%;
+      transform: rotateY(90deg) translateZ(tokens.$cubeSideTranslateZ);
+    }
+
+    &--top {
+      transform: rotateX(90deg) translateZ(tokens.$cubeSideTranslateZ);
+    }
+  }
+}

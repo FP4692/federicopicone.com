@@ -1,0 +1,40 @@
+@use "../abstracts/tokens";
+
+#skills {
+  &__content {
+    max-height: tokens.$skillsMaxHeight;
+    overflow-y: auto;
+    width: tokens.$skillsWidth;
+  }
+
+  .skill {
+    border-bottom: tokens.$skillBorderBottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: tokens.$skillPadding;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    margin: tokens.$skillsImgMargin;
+    max-height: tokens.$skillsImgSize;
+    max-width: tokens.$skillsImgSize;
+  }
+
+  .icon {
+    display: inline-block;
+    margin: tokens.$skillsIconMargin;
+    text-align: center;
+  }
+
+  .project {
+    align-items: center;
+    display: flex;
+    gap: tokens.$skillsProjectGap;
+    margin-top: tokens.$skillsProjectMarginTop;
+  }
+}

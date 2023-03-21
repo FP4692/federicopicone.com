@@ -1,0 +1,74 @@
+@use "../abstracts/tokens";
+
+// Base and side::before depend on these (fixed) values
+$pyramidSize: 5rem;
+$pyramidBeforeBorderWidth: 2.4rem;
+
+.pyramid__wrapper {
+  bottom: tokens.$pyramidWrapperBottom;
+  position: absolute;
+  right: tokens.$pyramidWrapperRight;
+
+  // Pyramid hidden on about or contact click
+  [data-section] & {
+    display: none;
+  }
+  [data-section="skills"] & {
+    display: block;
+  }
+}
+
+.pyramid {
+  height: $pyramidSize;
+  position: relative;
+  transform: tokens.$pyramidTransform;
+  transform-style: preserve-3d;
+  transition: tokens.$pyramidTransition;
+  width: $pyramidSize;
+
+  .pyramid__base {
+    background: var(--colorBgPrimary);
+    border: 0.15rem solid var(--colorContent);
+    height: 100%;
+    position: absolute;
+    transform: rotateX(90deg) translateZ(-1.8rem);
+    width: 100%;
+  }
+
+  .pyramid__side {
+    border: calc($pyramidSize / 2) solid transparent;
+    border-bottom: $pyramidSize solid var(--colorContent);
+    border-top: 0;
+    position: absolute;
+
+    &::before {
+      border: $pyramidBeforeBorderWidth solid transparent;
+      border-bottom: calc($pyramidBeforeBorderWidth * 2) solid
+        var(--colorBgPrimary);
+      content: "";
+      left: calc(-1 * $pyramidBeforeBorderWidth);
+      position: absolute;
+      top: -2.25rem;
+    }
+
+    &--back {
+      transform: rotateX(-30deg);
+      transform-origin: calc($pyramidSize / 2) 0;
+    }
+
+    &--front {
+      transform: rotateX(30deg);
+      transform-origin: 0 0;
+    }
+
+    &--left {
+      transform: rotateZ(30deg) rotateY(90deg);
+      transform-origin: calc($pyramidSize / 2) 0;
+    }
+
+    &--right {
+      transform: rotateZ(-30deg) rotateY(90deg);
+      transform-origin: calc($pyramidSize / 2) 0;
+    }
+  }
+}

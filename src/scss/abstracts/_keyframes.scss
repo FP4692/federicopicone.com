@@ -1,0 +1,66 @@
+@use "./tokens";
+
+//** Global keyframes
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+//** Contestual keyframes
+@keyframes colorPickerWidth {
+  100% {
+    // Same as canvas (200px)
+    width: 12.5rem;
+  }
+}
+
+@keyframes contentSlideDown {
+  0% {
+    transform: translateY(tokens.$sectionContentAnimationSlideY);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes contentSlideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(tokens.$sectionContentAnimationSlideY);
+  }
+}
+
+@keyframes loaderScale {
+  50% {
+    transform: scale(1%);
+  }
+  100% {
+    transform: scale(100000%);
+  }
+}
+
+@keyframes loaderStroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

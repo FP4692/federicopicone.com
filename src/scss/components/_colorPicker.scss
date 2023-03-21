@@ -1,0 +1,25 @@
+@use "../abstracts/tokens";
+
+.color-picker {
+  border-radius: tokens.$colorPickerBorderRadius;
+  height: tokens.$colorPickerHeight;
+  overflow: hidden;
+  position: relative;
+  transition: tokens.$colorPickerTransition;
+  width: 0;
+
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pointer {
+    background: tokens.$colorPickerPointerBg;
+    height: 100%;
+    left: calc(tokens.$colorPickerPointerWidth / 2);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: tokens.$colorPickerPointerWidth;
+  }
+}

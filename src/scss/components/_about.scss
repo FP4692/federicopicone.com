@@ -1,0 +1,14 @@
+@use "../abstracts/tokens";
+
+#about {
+  align-items: initial;
+  display: grid;
+  grid-template-columns: tokens.$aboutGridTemplateColumns;
+  padding: tokens.$aboutPadding;
+  text-align: justify;
+
+  &__content {
+    max-height: tokens.$aboutContentMaxHeight;
+    overflow-y: auto;
+  }
+}

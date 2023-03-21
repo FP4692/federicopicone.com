@@ -1,0 +1,139 @@
+@use "./tokens";
+
+//** Width
+@media screen and (min-width: 320px) {
+  #about {
+    padding: 6rem 3rem !important;
+  }
+
+  .color {
+    display: block !important;
+  }
+
+  .cube__wrapper {
+    transform: scale(1.1);
+  }
+
+  .skill {
+    align-items: center;
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  #about {
+    grid-template-columns: 1fr 2fr !important;
+    padding: 2.5rem 4rem 1.5rem 2rem !important;
+
+    &__content {
+      max-height: 100% !important;
+    }
+  }
+
+  .cube__wrapper {
+    bottom: 45% !important;
+  }
+
+  .logo__text {
+    display: block !important;
+  }
+
+  .menu button {
+    font-size: tokens.$fontSizeT4 !important;
+  }
+
+  #skills__content {
+    max-height: 75% !important;
+    width: 60% !important;
+
+    .icon {
+      margin: 0 1rem !important;
+    }
+  }
+
+  .sphere {
+    right: 15% !important;
+    top: 5% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #about {
+    padding: 12.5% !important;
+  }
+
+  .email {
+    font-size: 4vw !important;
+  }
+
+  .pyramid__wrapper {
+    bottom: 15% !important;
+    transform: scale(1.5);
+  }
+
+  #skills__content {
+    width: 50% !important;
+
+    .icon {
+      margin: 0 1.5rem !important;
+    }
+  }
+
+  .sphere {
+    height: calc(tokens.$shapeSize * 1.15) !important;
+    right: 20% !important;
+    top: 15% !important;
+    width: calc(tokens.$shapeSize * 1.15) !important;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  #skills__content {
+    max-height: 85% !important;
+  }
+}
+
+//** Height
+@media screen and (max-height: 320px) {
+  .cube__wrapper {
+    bottom: 35% !important;
+    transform: scale(0.8);
+  }
+
+  #skills__content {
+    max-height: 65% !important;
+  }
+}
+
+@media screen and (min-height: 720px) {
+  .cube__wrapper {
+    bottom: 20% !important;
+    left: 15% !important;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  #about {
+    padding: 30% 10% !important;
+  }
+
+  .cube__wrapper {
+    bottom: 30% !important;
+  }
+
+  .pyramid__wrapper {
+    bottom: 15% !important;
+    right: 20% !important;
+    transform: scale(1.5) !important;
+  }
+
+  #skills__content {
+    max-height: 80% !important;
+  }
+
+  .sphere {
+    height: calc(tokens.$shapeSize * 1.15) !important;
+    top: 22.5% !important;
+    width: calc(tokens.$shapeSize * 1.15) !important;
+  }
+}

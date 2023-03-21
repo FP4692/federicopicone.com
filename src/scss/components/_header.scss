@@ -1,0 +1,59 @@
+@use "../abstracts/tokens";
+
+.header__content {
+  justify-content: space-between;
+  padding: tokens.$headerContentPadding;
+  
+  &,
+  & > div {
+    align-items: center;
+    display: flex;
+  }
+
+  &--left {
+    font-size: tokens.$headerContentLeftFontSize;
+    gap: tokens.$headerContentLeftGap;
+
+    a {
+      height: tokens.$headerLogoSize;
+    }
+  }
+
+  .color {
+    background: tokens.$headerColorBg;
+    border-radius: 50%;
+    height: tokens.$headerContentRightSize;
+    margin: tokens.$headerColorMargin;
+    position: relative;
+    width: tokens.$headerContentRightSize;
+  }
+
+  .lang {
+    height: tokens.$headerContentRightSize;
+    position: relative;
+    width: tokens.$headerContentRightSize;
+  }
+
+  // color and lang checkbox
+  input {
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .logo {
+    height: 100%;
+    width: tokens.$headerLogoSize;
+
+    // Logo text hidden on mobile
+    &__text {
+      display: none;
+    }
+
+    path {
+      fill: tokens.$headerLogoPathFill;
+    }
+  }
+}
