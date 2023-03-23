@@ -53,7 +53,7 @@ export const color = (() => {
     if (picker.active) {
       style.setProperty(
         "--colorContent",
-        `rgba(${picker.pixel[0]},${picker.pixel[1]},${picker.pixel[2]},${picker.pixel[3]})`
+        `rgba(${picker.pixel[0]},${picker.pixel[1]},${picker.pixel[2]}, 1)`
       );
     }
   };
@@ -108,9 +108,11 @@ export const color = (() => {
     });
 
     // The color is set whenever the mouse button is released (both when clicking on the canvas or dragging the pointer)
-    window.addEventListener("mouseup", () => {
-      setColor();
-      picker.drag = false;
+    window.addEventListener("mouseup", (e) => {
+      if(e.target !== selectors.colorCheckbox) {
+        setColor();
+        picker.drag = false;
+      }
     });
 
     //** Touch events (drag functionality)

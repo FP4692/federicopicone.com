@@ -3,7 +3,7 @@
 //** Width
 @media screen and (min-width: 320px) {
   #about {
-    padding: 6rem 3rem !important;
+    padding: 6rem 2.5rem !important;
   }
 
   .color {
@@ -11,6 +11,7 @@
   }
 
   .cube__wrapper {
+    left: 10% !important;
     transform: scale(1.1);
   }
 
@@ -18,20 +19,19 @@
     align-items: center;
     flex-direction: row !important;
   }
+
+  #skills__content {
+    max-height: 64.5% !important;
+  }
 }
 
-@media screen and (min-width: 541px) {
+@media screen and (min-width: 480px) {
   #about {
-    grid-template-columns: 1fr 2fr !important;
-    padding: 2.5rem 4rem 1.5rem 2rem !important;
-
-    &__content {
-      max-height: 100% !important;
-    }
+    padding: 5rem 4rem !important;
   }
 
   .cube__wrapper {
-    bottom: 45% !important;
+    left: 15% !important;
   }
 
   .logo__text {
@@ -43,7 +43,32 @@
   }
 
   #skills__content {
-    max-height: 75% !important;
+    max-height: 65% !important;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  #about {
+    grid-template-columns: 1fr 2fr !important;
+    padding: 3.25rem 4rem 4rem 2rem !important;
+
+    &__content {
+      max-height: 100% !important;
+    }
+  }
+
+  .cube__wrapper {
+    bottom: 45% !important;
+    left: 5% !important;
+  }
+
+  .pyramid__wrapper {
+    bottom: 20% !important;
+    right: 5% !important;
+  }
+
+  #skills__content {
+    max-height: 68% !important;
     width: 60% !important;
 
     .icon {
@@ -62,16 +87,27 @@
     padding: 12.5% !important;
   }
 
+  .cube__wrapper {
+    bottom: 30% !important;
+    left: 10% !important;
+  }
+
   .email {
     font-size: 4vw !important;
   }
 
   .pyramid__wrapper {
     bottom: 15% !important;
+    right: 15% !important;
     transform: scale(1.5);
   }
 
+  #shapes .title {
+    font-size: tokens.$fontSizeH3 !important;
+  }
+
   #skills__content {
+    max-height: 74% !important;
     width: 50% !important;
 
     .icon {
@@ -96,29 +132,23 @@
 //** Height
 @media screen and (max-height: 320px) {
   .cube__wrapper {
-    bottom: 35% !important;
-    transform: scale(0.8);
+    bottom: 40% !important;
+    transform: scale(0.9);
   }
 
   #skills__content {
-    max-height: 65% !important;
-  }
-}
-
-@media screen and (min-height: 720px) {
-  .cube__wrapper {
-    bottom: 20% !important;
-    left: 15% !important;
+    max-height: 60% !important;
   }
 }
 
 @media screen and (min-height: 1024px) {
   #about {
-    padding: 30% 10% !important;
+    padding: 20% 10% !important;
   }
 
   .cube__wrapper {
-    bottom: 30% !important;
+    bottom: 35% !important;
+    left: 15% !important;
   }
 
   .pyramid__wrapper {
@@ -127,8 +157,8 @@
     transform: scale(1.5) !important;
   }
 
-  #skills__content {
-    max-height: 80% !important;
+  #shapes .title {
+    font-size: tokens.$fontSizeH3 !important;
   }
 
   .sphere {

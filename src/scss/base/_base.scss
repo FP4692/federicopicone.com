@@ -1,16 +1,16 @@
 @use "../abstracts/tokens";
 
 :root {
-  --colorBgPrimary: rgb(37, 41, 50);
+  --colorBgPrimary: rgba(37, 41, 50, 1);
   --colorBgSecondary: rgba(117, 117, 162, 0.6);
-  --colorContent: rgb(255, 255, 255);
+  --colorContent: rgba(255, 255, 255, 1);
   --colorShadow: rgba(0, 0, 0, 0.2);
   // Value set on about__btn click
   --cubeSideTranslateZ: 0rem;
   // Value set on skills__btn click
   --pyramidTransform: rotateY(-45deg) rotateZ(-30deg);
   // Value for cube and sphere
-  --shapeSize: 6.5rem;
+  --shapeSize: 6rem;
 }
 
 body {

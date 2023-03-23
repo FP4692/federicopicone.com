@@ -10,6 +10,7 @@ $fontFamilyComfortaa: "Comfortaa", cursive;
 $fontFamilyGugi: "Gugi", cursive;
 
 $fontSizeH3: map-get(typography.$types, "h3");
+$fontSizeH4: map-get(typography.$types, "h4");
 $fontSizeT3: map-get(typography.$types, "t3");
 $fontSizeT4: map-get(typography.$types, "t4");
 $fontSizeT5: map-get(typography.$types, "t5");
@@ -25,7 +26,7 @@ $zIndex2: 2;
 //** Contestual Tokens
 $aboutGridTemplateColumns: 0 1fr;
 $aboutPadding: 4.5rem 1rem;
-$aboutContentMaxHeight: 70%;
+$aboutContentMaxHeight: 60%;
 
 $backBtnMarginTop: 2rem;
 
@@ -47,7 +48,7 @@ $cubeTransform: rotateY(-30deg);
 $cubeSideBorder: $borderPrimary;
 $cubeSideTransition: $transitionTransform250eio;
 $cubeSideTranslateZ: var(--cubeSideTranslateZ);
-$cubeWrapperBottom: 15%;
+$cubeWrapperBottom: 25%;
 $cubeWrapperLeft: 0;
 $cubeWrapperPerspective: 100rem;
 $cubeWrapperPerspectiveOrigin: 50% -250%;
@@ -80,7 +81,7 @@ $loaderZIndex: $zIndex2;
 
 $pyramidTransform: var(--pyramidTransform);
 $pyramidTransition: $transitionTransform250eio;
-$pyramidWrapperBottom: 3%;
+$pyramidWrapperBottom: 7.5%;
 $pyramidWrapperRight: 10%;
 
 $sectionContentAnimationSlideY: -2rem;
@@ -88,12 +89,12 @@ $sectionContentPadding: 0 1rem;
 
 $shapesMenuGap: 2rem;
 $shapesMenuButtonFontSize: $fontSizeT5;
-$shapesTitleFontSize: $fontSizeH3;
+$shapesTitleFontSize: $fontSizeH4;
 $shapesTitleMaxWidth: 75%;
 
 $skillBorderBottom: $borderPrimary;
 $skillPadding: 0.75rem 0;
-$skillsMaxHeight: 65%;
+$skillsMaxHeight: 57.5%;
 $skillsWidth: 85%;
 $skillsIconMargin: 0 0.5rem;
 $skillsImgMargin: 0.5rem 0;
@@ -108,4 +109,4 @@ $sphereTop: 15%;
 $sphereTransition: $transitionTransform250eio;
 
 $titleFontFamily: $fontFamilyGugi;
-$titleMargin: 1rem 0;
+$titleMargin: 0.75rem 0;

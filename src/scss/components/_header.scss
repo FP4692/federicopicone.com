@@ -22,6 +22,7 @@
   .color {
     background: tokens.$headerColorBg;
     border-radius: 50%;
+    display: none;
     height: tokens.$headerContentRightSize;
     margin: tokens.$headerColorMargin;
     position: relative;

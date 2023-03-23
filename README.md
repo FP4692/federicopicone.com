@@ -1,5 +1,5 @@
 # **federicopicone.com**
-#### _http://federicopicone.com is a website to introduce myself, as well as the skills I have acquired so far in the front-end spectrum and my determination in becoming a better developer_
+#### _http://www.federicopicone.com is a website to introduce myself, as well as the skills I have acquired so far in the front-end spectrum and my determination in becoming a better developer_
 ---
 
 ### **Terminal:**  
