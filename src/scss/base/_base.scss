@@ -45,7 +45,9 @@ header {
 }
 
 main {
+  // Fallback
   height: 100vh;
+  height: var(--vh);
   overflow: hidden;
   position: relative;
 }
@@ -76,5 +78,10 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: tokens.$scrollbarWidth;
+
+  &-thumb {
+    background: tokens.$scrollbarBg;
+    border-radius: tokens.$scrollbarBorderRadius;
+  }
 }
