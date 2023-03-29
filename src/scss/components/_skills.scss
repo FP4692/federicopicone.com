@@ -1,6 +1,9 @@
 @use "../abstracts/tokens";
 
 #skills {
+  justify-content: initial;
+  padding: tokens.$skillsPadding;
+
   &__content {
     max-height: tokens.$skillsMaxHeight;
     overflow-y: auto;

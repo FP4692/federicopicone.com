@@ -11,6 +11,8 @@
   --pyramidTransform: rotateY(-45deg) rotateZ(-30deg);
   // Value for cube and sphere
   --shapeSize: 6rem;
+  // window.innerHeight (px) is passed onload
+  --vh: 100%;
 }
 
 body {
@@ -18,13 +20,14 @@ body {
   color: tokens.$bodyColor;
   font-family: tokens.$bodyFontFamily;
   font-size: tokens.$bodyFontSize;
+  // Fallback
   min-height: 100vh;
+  min-height: var(--vh);
   overflow: hidden;
 }
 
 a {
   color: tokens.$bodyColor;
-  text-decoration: none;
 }
 
 button {

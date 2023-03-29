@@ -1,7 +1,9 @@
 import content from "../language.json";
 
 export const language = (() => {
-  let selectors = {};
+  let selectors = {
+    langCheckbox: document.querySelector(".lang__checkbox"),
+  };
 
   const loadContent = (lang) => {
     for (let i in content.en) {
@@ -21,7 +23,20 @@ export const language = (() => {
     }
   };
 
+  const eventHandler = () => {
+    window.addEventListener("DOMContentLoaded", () => {
+      loadContent("en");
+    });
+
+    selectors.langCheckbox.addEventListener("click", () => {
+      // Default lang "en"; "it" if lang checkbox.checked
+      const lang = selectors.langCheckbox.checked ? "it" : "en";
+
+      loadContent(lang);
+    });
+  };
+
   return {
-    loadContent,
+    eventHandler,
   };
 })();

@@ -4,13 +4,13 @@ import { cursor } from "./modules/cursor";
 import { language } from "./modules/language";
 import { section } from "./modules/section";
 import { shape } from "./modules/shape";
+import { viewport } from "./modules/viewport";
 
 import "./scss/main.scss";
 
 const index = (() => {
   const selectors = {
     backBtn: document.querySelectorAll(".back__btn"),
-    langCheckbox: document.querySelector(".lang__checkbox"),
     menu: document.querySelector(".menu"),
   };
 
@@ -29,22 +29,13 @@ const index = (() => {
     //** Color picker
     color.eventHandler();
 
-    //** Language
-    window.addEventListener("DOMContentLoaded", () => {
-      language.loadContent("en");
-    });
-
-    selectors.langCheckbox.addEventListener("click", () => {
-      // Default lang "en"; "it" if lang checkbox.checked
-      const lang = selectors.langCheckbox.checked ? "it" : "en";
-
-      language.loadContent(lang);
-    });
-
     //** Cursor
     window.addEventListener("mousemove", (e) => {
       cursor.cursorHandler(e);
     });
+
+    //** Language
+    language.eventHandler();
 
     //** Sections and shapes
     let sectionName = undefined;
@@ -70,6 +61,9 @@ const index = (() => {
         document.querySelector("main").removeAttribute("data-section");
       });
     });
+
+    //** Viewport
+    viewport.eventHandler();
   };
 
   return {

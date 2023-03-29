@@ -59,6 +59,12 @@ export const color = (() => {
   };
 
   const eventHandler = () => {
+    window.addEventListener("DOMContentLoaded", () => {
+      selectors.picker.style.animation =
+        "colorPickerWidth 150ms forwards ease-in-out";
+      picker.active = true;
+    });
+
     //** Mouse events (click, drag functionality)
     // If color checkbox.checked, color picker width is set from 0 to 12.5rem (200px; same as canvas); otherwise it is reset
     selectors.colorCheckbox.addEventListener("click", () => {
@@ -109,7 +115,7 @@ export const color = (() => {
 
     // The color is set whenever the mouse button is released (both when clicking on the canvas or dragging the pointer)
     window.addEventListener("mouseup", (e) => {
-      if(e.target !== selectors.colorCheckbox) {
+      if (e.target !== selectors.colorCheckbox) {
         setColor();
         picker.drag = false;
       }
@@ -167,7 +173,7 @@ export const color = (() => {
     });
   };
 
-  // Canvas filled on page load
+  // The canvas context is filled linear gradient
   linearGradient(picker.context, selectors.canvas.offsetWidth, 0, 0, 0, [
     "rgb(255, 0, 0)",
     "rgb(255, 0, 255)",

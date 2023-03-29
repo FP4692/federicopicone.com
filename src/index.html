@@ -13,7 +13,8 @@
     />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <!-- Set as "visible" through JavaScript to prevent FOUC (Flash Of Unstyled Content) -->
+  <body style="visibility: hidden">
     <header>
       <div class="header__content">
         <div class="header__content--left">
@@ -178,9 +179,7 @@
           <h2 class="title fade">Skills</h2>
           <ul>
             <li class="skill">
-              <h4 id="core" class="fade">
-                <i class="fa-solid fa-chevron-right"></i> Core
-              </h4>
+              <h4 id="core" class="fade">Core</h4>
               <div>
                 <div class="icon">
                   <img class="html" alt="html icon" />
@@ -215,9 +214,7 @@
               </div>
             </li>
             <li class="skill">
-              <h4 id="api" class="fade">
-                <i class="fa-solid fa-chevron-right"></i> API
-              </h4>
+              <h4 id="api" class="fade">API</h4>
               <div>
                 <div class="icon">
                   <img class="canvas" alt="canvas icon" />
@@ -232,9 +229,7 @@
               </div>
             </li>
             <li class="skill">
-              <h4 id="preprocessors" class="fade">
-                <i class="fa-solid fa-chevron-right"></i> Preprocessors
-              </h4>
+              <h4 id="preprocessors" class="fade">Preprocessors</h4>
               <div>
                 <div class="icon">
                   <img class="sass" alt="sass icon" />
@@ -259,9 +254,7 @@
               </div>
             </li>
             <li class="skill">
-              <h4 id="tools" class="fade">
-                <i class="fa-solid fa-chevron-right"></i> Tools
-              </h4>
+              <h4 id="tools" class="fade">Tools</h4>
               <div>
                 <div class="icon">
                   <img class="git" alt="git icon" />
@@ -276,9 +269,7 @@
               </div>
             </li>
             <li class="skill">
-              <h4 id="learning" class="fade">
-                <i class="fa-solid fa-chevron-right"></i> Learning right now
-              </h4>
+              <h4 id="learning" class="fade">Learning right now</h4>
               <div>
                 <div class="icon">
                   <img class="react" alt="react icon" />

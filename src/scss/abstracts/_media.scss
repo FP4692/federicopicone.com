@@ -19,10 +19,6 @@
     align-items: center;
     flex-direction: row !important;
   }
-
-  #skills__content {
-    max-height: 64.5% !important;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -40,10 +36,6 @@
 
   .menu button {
     font-size: tokens.$fontSizeT4 !important;
-  }
-
-  #skills__content {
-    max-height: 65% !important;
   }
 }
 
@@ -67,12 +59,16 @@
     right: 5% !important;
   }
 
-  #skills__content {
-    max-height: 68% !important;
-    width: 60% !important;
+  #skills {
+    justify-content: center !important;
+    padding: 2rem 0 2.5rem 0 !important;
 
-    .icon {
-      margin: 0 1rem !important;
+    &__content {
+      width: 60% !important;
+
+      .icon {
+        margin: 0 1rem !important;
+      }
     }
   }
 
@@ -107,7 +103,6 @@
   }
 
   #skills__content {
-    max-height: 74% !important;
     width: 50% !important;
 
     .icon {
@@ -123,9 +118,9 @@
   }
 }
 
-@media screen and (min-width: 1441px) {
-  #skills__content {
-    max-height: 85% !important;
+@media screen and (min-width: 1440px) {
+  #skills {
+    padding: 0 !important;
   }
 }
 
@@ -135,15 +130,11 @@
     bottom: 40% !important;
     transform: scale(0.9);
   }
-
-  #skills__content {
-    max-height: 60% !important;
-  }
 }
 
 @media screen and (min-height: 1024px) {
   #about {
-    padding: 20% 10% !important;
+    padding: 25% 10% !important;
   }
 
   .cube__wrapper {
