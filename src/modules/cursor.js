@@ -3,7 +3,7 @@ export const cursor = (() => {
     cursor: document.querySelector(".cursor"),
   };
 
-  const cursorHandler = (e) => {
+  const moveCursor = (e) => {
     selectors.cursor.style.left = `${e.clientX}px`;
     selectors.cursor.style.top = `${e.clientY}px`;
 
@@ -15,8 +15,27 @@ export const cursor = (() => {
     }
   };
 
+  const showCursorOnDesktop = () => {
+    const isMobile = () =>
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Kindle/i.test(
+        navigator.userAgent
+      );
+
+    { !isMobile() && (selectors.cursor.style.display = "block"); }
+  };
+
+  const eventHandler = () => {
+    window.addEventListener("DOMContentLoaded", () => {
+      showCursorOnDesktop();
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      moveCursor(e);
+    });
+  };
+
   return {
     selectors,
-    cursorHandler,
+    eventHandler,
   };
 })();

@@ -8,6 +8,11 @@
 
   .color {
     display: block !important;
+
+    &-picker {
+      animation: colorPickerWidth 150ms forwards ease-in-out;
+      display: block !important;
+    }
   }
 
   .cube__wrapper {
@@ -118,7 +123,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   #skills {
     padding: 0 !important;
   }
@@ -129,6 +134,16 @@
   .cube__wrapper {
     bottom: 40% !important;
     transform: scale(0.9);
+  }
+}
+
+@media screen and (min-height: 576px) {
+  .cube__wrapper {
+    bottom: 25% !important;
+  }
+
+  .pyramid__wrapper {
+    bottom: 10% !important;
   }
 }
 

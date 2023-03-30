@@ -3,6 +3,8 @@
 .cursor {
   border: tokens.$cursorBorder;
   border-radius: 50%;
+  // Not showing on mobile
+  display: none;
   height: tokens.$cursorSize;
   pointer-events: none;
   position: fixed;

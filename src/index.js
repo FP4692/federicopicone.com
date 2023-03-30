@@ -30,9 +30,7 @@ const index = (() => {
     color.eventHandler();
 
     //** Cursor
-    window.addEventListener("mousemove", (e) => {
-      cursor.cursorHandler(e);
-    });
+    cursor.eventHandler();
 
     //** Language
     language.eventHandler();

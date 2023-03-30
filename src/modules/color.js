@@ -9,7 +9,7 @@ export const color = (() => {
   };
 
   const picker = {
-    active: false,
+    active: true,
     context: selectors.canvas.getContext("2d", { willReadFrequently: true }),
     drag: false,
     pixel: undefined,
@@ -59,12 +59,6 @@ export const color = (() => {
   };
 
   const eventHandler = () => {
-    window.addEventListener("DOMContentLoaded", () => {
-      selectors.picker.style.animation =
-        "colorPickerWidth 150ms forwards ease-in-out";
-      picker.active = true;
-    });
-
     //** Mouse events (click, drag functionality)
     // If color checkbox.checked, color picker width is set from 0 to 12.5rem (200px; same as canvas); otherwise it is reset
     selectors.colorCheckbox.addEventListener("click", () => {
@@ -93,11 +87,11 @@ export const color = (() => {
 
     // The custom cursor is hidden while hovering on the color picker
     selectors.picker.addEventListener("mouseenter", () => {
-      cursor.selectors.cursor.style.display = "none";
+      cursor.selectors.cursor.style.visibility = "hidden";
     });
 
     selectors.picker.addEventListener("mouseleave", () => {
-      cursor.selectors.cursor.style.display = "block";
+      cursor.selectors.cursor.style.visibility = "visible";
     });
 
     selectors.picker.addEventListener("mousedown", (e) => {

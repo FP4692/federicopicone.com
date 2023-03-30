@@ -16,6 +16,8 @@
   }
 
   .menu {
+    z-index: tokens.$shapesMenuZIndex;
+
     // Menu hidden on about, skills or contact click
     [data-section] & {
       display: none;

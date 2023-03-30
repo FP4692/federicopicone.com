@@ -2,6 +2,7 @@
 
 .color-picker {
   border-radius: tokens.$colorPickerBorderRadius;
+  display: none;
   height: tokens.$colorPickerHeight;
   overflow: hidden;
   position: relative;

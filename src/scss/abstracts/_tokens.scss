@@ -48,7 +48,7 @@ $cubeTransform: rotateY(-30deg);
 $cubeSideBorder: $borderPrimary;
 $cubeSideTransition: $transitionTransform250eio;
 $cubeSideTranslateZ: var(--cubeSideTranslateZ);
-$cubeWrapperBottom: 25%;
+$cubeWrapperBottom: 15%;
 $cubeWrapperLeft: 0;
 $cubeWrapperPerspective: 100rem;
 $cubeWrapperPerspectiveOrigin: 50% -250%;
@@ -81,8 +81,8 @@ $loaderZIndex: $zIndex2;
 
 $pyramidTransform: var(--pyramidTransform);
 $pyramidTransition: $transitionTransform250eio;
-$pyramidWrapperBottom: 10%;
-$pyramidWrapperRight: 10%;
+$pyramidWrapperBottom: 3%;
+$pyramidWrapperRight: 5%;
 
 $scrollbarBg: var(--colorBgSecondary);
 $scrollbarBorderRadius: 0.5rem;
@@ -92,6 +92,7 @@ $sectionContentAnimationSlideY: -2rem;
 $sectionContentPadding: 0 1rem;
 
 $shapesMenuGap: 2rem;
+$shapesMenuZIndex: $zIndex1;
 $shapesMenuButtonFontSize: $fontSizeT5;
 $shapesTitleFontSize: $fontSizeH4;
 $shapesTitleMaxWidth: 75%;
