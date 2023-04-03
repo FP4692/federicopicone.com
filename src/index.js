@@ -9,11 +9,6 @@ import { viewport } from "./modules/viewport";
 import "./scss/main.scss";
 
 const index = (() => {
-  const selectors = {
-    backBtn: document.querySelectorAll(".back__btn"),
-    menu: document.querySelector(".menu"),
-  };
-
   const init = () => {
     assets.loadAssets();
     loadEventListeners();
@@ -38,26 +33,24 @@ const index = (() => {
     //** Sections and shapes
     let sectionName = undefined;
 
-    // Buttons about, skills and contact
-    selectors.menu.addEventListener("click", (e) => {
-      if (e.target.classList.contains("clickable")) {
-        // e.g. sectionName = "about" when clicking on .about__btn
-        sectionName = e.target.id.split("__btn")[0];
+    window.addEventListener("click", (e) => {
+      // It matches word characters that contain __btn
+      const btnMatch = e.target.className.match(/\w+(__btn)/);
 
-        section.sectionHandler(sectionName);
-        shape.shapeHandler(sectionName);
+      if (btnMatch) {
+        if (btnMatch[0] === "back__btn" || btnMatch[0] === "home__btn") {
+          section.sectionHandler(sectionName);
+          shape.shapeHandler(sectionName);
+
+          // dataset is removed to show everything in section shapes
+          document.querySelector("main").removeAttribute("data-section");
+        } else {
+          // e.g. sectionName = "about" when clicking on .about__btn
+          sectionName = btnMatch[0].split("__btn")[0];
+          section.sectionHandler(sectionName);
+          shape.shapeHandler(sectionName);
+        }
       }
-    });
-
-    // Back button in sections about, skills and contact
-    selectors.backBtn.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        section.sectionHandler(sectionName);
-        shape.shapeHandler(sectionName);
-
-        // dataset removed to show everything in section shapes
-        document.querySelector("main").removeAttribute("data-section");
-      });
     });
 
     //** Viewport

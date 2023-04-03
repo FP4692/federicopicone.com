@@ -20,8 +20,8 @@ $shapeSize: var(--shapeSize);
 $transition150eo: all 150ms ease-out;
 $transitionTransform250eio: transform 250ms ease-in-out;
 
-$zIndex1: 1;
-$zIndex2: 2;
+$zIndexAbove1: 1;
+$zIndexAbove2: 2;
 
 //** Contestual Tokens
 $aboutGridTemplateColumns: 0 1fr;
@@ -56,28 +56,28 @@ $cubeWrapperPerspectiveOrigin: 50% -250%;
 $cursorBorder: $borderPrimary;
 $cursorSize: 2rem;
 $cursorTransition: $transition150eo;
-$cursorZIndex: $zIndex2;
+$cursorZIndex: $zIndexAbove2;
 $cursorActiveBg: var(--colorContent);
 $cursorActiveTransform: scale(1.5);
 $cursorBeforeBg: var(--colorContent);
 $cursorBeforeSize: 0.3rem;
 
-$headerZIndex: $zIndex1;
+$headerZIndex: $zIndexAbove1;
 $headerColorBg: linear-gradient(
   -45deg,
   var(--colorBgSecondary),
   var(--colorContent)
 );
 $headerColorMargin: 0 1.5rem 0 0.5rem;
-$headerContentPadding: 1.75rem;
+$headerContentMargin: 1.75rem 1.75rem 0 1.75rem;
 $headerContentLeftFontSize: $fontSizeT3;
-$headerContentLeftGap: 1rem;
 $headerContentRightSize: 1rem;
 $headerLogoSize: 2rem;
 $headerLogoPathFill: var(--colorContent);
+$headerLogoTextMarginLeft: 1rem;
 
 $loaderBg: var(--colorContent);
-$loaderZIndex: $zIndex2;
+$loaderZIndex: $zIndexAbove2;
 
 $pyramidTransform: var(--pyramidTransform);
 $pyramidTransition: $transitionTransform250eio;
@@ -91,9 +91,9 @@ $scrollbarWidth: 0.2rem;
 $sectionContentAnimationSlideY: -2rem;
 $sectionContentPadding: 0 1rem;
 
-$shapesMenuGap: 2rem;
-$shapesMenuZIndex: $zIndex1;
+$shapesMenuZIndex: $zIndexAbove1;
 $shapesMenuButtonFontSize: $fontSizeT5;
+$shapesMenuButtonMargin: 0 1rem;
 $shapesTitleFontSize: $fontSizeH4;
 $shapesTitleMaxWidth: 75%;
 

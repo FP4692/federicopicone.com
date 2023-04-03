@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="color-scheme" content="only light">
-    <meta name="googlebot" content="notranslate">
+    <meta name="color-scheme" content="only light" />
+    <meta name="googlebot" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Federico Picone | Welcome</title>
-  <link rel="icon" href="assets/favicon.svg"><script defer src="bundle0760c839e4dbaa1fbee4.js"></script></head>
+  <link rel="icon" href="assets/favicon.svg"><script defer src="bundle6118c287036be757a5ce.js"></script></head>
   <!-- Set as "visible" through JavaScript to prevent FOUC (Flash Of Unstyled Content) -->
   <body style="visibility: hidden">
     <header>
@@ -66,36 +66,36 @@
         <nav class="menu">
           <ul>
             <li>
-              <button id="about__btn" class="clickable fade">ABOUT</button>
+              <button class="about__btn clickable fade">ABOUT</button>
             </li>
             <li>
-              <button id="skills__btn" class="clickable fade">SKILLS</button>
+              <button class="skills__btn clickable fade">SKILLS</button>
             </li>
             <li>
-              <button id="contact__btn" class="clickable fade">CONTACT</button>
+              <button class="contact__btn clickable fade">CONTACT</button>
             </li>
           </ul>
         </nav>
         <div class="cube__wrapper">
           <div class="cube">
-            <div class="cube__side cube__side--back"></div>
-            <div class="cube__side cube__side--bottom"></div>
-            <div class="cube__side cube__side--front"></div>
-            <div class="cube__side cube__side--left"></div>
-            <div class="cube__side cube__side--right"></div>
-            <div class="cube__side cube__side--top"></div>
+            <div class="cube__side cube__side--back about__btn"></div>
+            <div class="cube__side cube__side--bottom about__btn"></div>
+            <div class="cube__side cube__side--front about__btn"></div>
+            <div class="cube__side cube__side--left about__btn"></div>
+            <div class="cube__side cube__side--right about__btn"></div>
+            <div class="cube__side cube__side--top about__btn"></div>
           </div>
         </div>
         <div class="pyramid__wrapper">
           <div class="pyramid">
-            <div class="pyramid__base"></div>
-            <div class="pyramid__side pyramid__side--back"></div>
-            <div class="pyramid__side pyramid__side--front"></div>
-            <div class="pyramid__side pyramid__side--left"></div>
-            <div class="pyramid__side pyramid__side--right"></div>
+            <div class="pyramid__base skills__btn"></div>
+            <div class="pyramid__side pyramid__side--back skills__btn"></div>
+            <div class="pyramid__side pyramid__side--front skills__btn"></div>
+            <div class="pyramid__side pyramid__side--left skills__btn"></div>
+            <div class="pyramid__side pyramid__side--right skills__btn"></div>
           </div>
         </div>
-        <div class="sphere"></div>
+        <div class="sphere contact__btn"></div>
       </section>
       <section id="loader">
         <svg
@@ -156,7 +156,12 @@
         <!-- Empty div required for grid system -->
         <div></div>
         <div id="about__content">
-          <h2 class="title fade">About</h2>
+          <div class="section--top">
+            <h2 class="title fade">About</h2>
+            <button>
+              <i class="fa-solid fa-house fa-lg home__btn clickable"></i>
+            </button>
+          </div>
           <p class="fade">
             Hello! My name is Federico and I like building creative and useful
             interfaces for the Web.
@@ -178,7 +183,12 @@
       </section>
       <section id="skills">
         <div id="skills__content">
-          <h2 class="title fade">Skills</h2>
+          <div class="section--top">
+            <h2 class="title fade">Skills</h2>
+            <button>
+              <i class="fa-solid fa-house fa-lg home__btn clickable"></i>
+            </button>
+          </div>
           <ul>
             <li class="skill">
               <h4 id="core" class="fade">Core</h4>

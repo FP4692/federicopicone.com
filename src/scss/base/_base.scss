@@ -71,6 +71,12 @@ section {
   & > div {
     padding: tokens.$sectionContentPadding;
   }
+  
+  .section--top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 ul {

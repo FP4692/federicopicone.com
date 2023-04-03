@@ -10,9 +10,9 @@
     "header .lang__text": "IT",
     "header .logo__text": "Federico Picone",
 
-    "#shapes #about__btn": "ABOUT",
-    "#shapes #contact__btn": "CONTACT",
-    "#shapes #skills__btn": "SKILLS",
+    "#shapes .about__btn": "ABOUT",
+    "#shapes .contact__btn": "CONTACT",
+    "#shapes .skills__btn": "SKILLS",
     "#shapes .title": "LET'S SHAPE UP!",
 
     "#skills #api": "API",
@@ -44,9 +44,9 @@
     "header .lang__text": "EN",
     "header .logo__text": "Federico Picone",
 
-    "#shapes #about__btn": "INFO",
-    "#shapes #contact__btn": "CONTATTI",
-    "#shapes #skills__btn": "COMPETENZE",
+    "#shapes .about__btn": "INFO",
+    "#shapes .contact__btn": "CONTATTI",
+    "#shapes .skills__btn": "COMPETENZE",
     "#shapes .title": "LET'S SHAPE UP!",
 
     "#skills #api": "API",

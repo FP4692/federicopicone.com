@@ -26,11 +26,11 @@
     button {
       cursor: help;
       font-size: tokens.$shapesMenuButtonFontSize;
+      margin: tokens.$shapesMenuButtonMargin;
     }
 
     ul {
       display: flex;
-      gap: tokens.$shapesMenuGap;
     }
   }
 }

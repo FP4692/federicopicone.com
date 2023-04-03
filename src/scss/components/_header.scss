@@ -2,8 +2,8 @@
 
 .header__content {
   justify-content: space-between;
-  padding: tokens.$headerContentPadding;
-  
+  margin: tokens.$headerContentMargin;
+
   &,
   & > div {
     align-items: center;
@@ -12,7 +12,6 @@
 
   &--left {
     font-size: tokens.$headerContentLeftFontSize;
-    gap: tokens.$headerContentLeftGap;
 
     a {
       height: tokens.$headerLogoSize;
@@ -51,6 +50,7 @@
     // Logo text hidden on mobile
     &__text {
       display: none;
+      margin-left: tokens.$headerLogoTextMarginLeft;
     }
 
     path {
