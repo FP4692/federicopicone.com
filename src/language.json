@@ -6,6 +6,7 @@
 
     "#contact .back__btn": "<i class='fa-solid fa-backward-step'></i> BACK",
     "#contact .email": "hello@federicopicone.com",
+    "#contact .title": "Contact",
 
     "header .lang__text": "IT",
     "header .logo__text": "Federico Picone",
@@ -40,6 +41,7 @@
 
     "#contact .back__btn": "<i class='fa-solid fa-backward-step'></i> INDIETRO",
     "#contact .email": "hello@federicopicone.com",
+    "#contact .title": "Contatti",
 
     "header .lang__text": "EN",
     "header .logo__text": "Federico Picone",
