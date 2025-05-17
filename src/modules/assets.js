@@ -1,5 +1,6 @@
 import canvasImg from "../assets/skills/canvas.svg";
 import cssImg from "../assets/skills/css.svg";
+import figmaImg from "../assets/skills/figma.svg";
 import gitImg from "../assets/skills/git.svg";
 import githubImg from "../assets/skills/github.svg";
 import htmlImg from "../assets/skills/html.svg";
@@ -7,6 +8,7 @@ import jsImg from "../assets/skills/js.svg";
 import reactImg from "../assets/skills/react.svg";
 import sassImg from "../assets/skills/sass.svg";
 import webpackImg from "../assets/skills/webpack.svg";
+import wordpressImg from "../assets/skills/wordpress.svg";
 
 export const assets = (() => {
   const selectors = {};
@@ -15,6 +17,7 @@ export const assets = (() => {
     const assets = [
       canvasImg,
       cssImg,
+      figmaImg,
       gitImg,
       githubImg,
       htmlImg,
@@ -22,6 +25,7 @@ export const assets = (() => {
       reactImg,
       sassImg,
       webpackImg,
+      wordpressImg,
     ];
 
     for (let i of assets) {

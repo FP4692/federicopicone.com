@@ -1,7 +1,7 @@
 {
   "en": {
     "#about .back__btn": "<i class='fa-solid fa-backward-step'></i> BACK",
-    "#about p": "Hello! My name is Federico and I like building useful and creative interfaces for the Web.<br /><br />&lt;&lt;Curiosity&gt;&gt; is the word that suits me best: I try to learn as much as possible every day and this approach is allowing me to become a self-taught Front-End Developer, starting from scratch. Before this commitment, which I started in October 2022, I have worked in the commercial field for over 7 years.<br /><br />I'm currently based in Rome, Italy.",
+    "#about p": "Hello! My name is Federico and I like building creative and useful interfaces for the Web. <br /> <br /> After 7+ years of work experience in the commercial field, I found out how satisfying is to make a digital product live on the Internet and I pursued the ambition to help create websites that might positively impact people’s lives. <br /> <br /> &lt;&lt;Curiosity&gt;&gt; is the word that suits me best: I try to learn as much as possible every day and this approach allowed me to become a self-taught Front-End developer, starting from scratch. I am currently working as a web developer in a marketing agency and I would like to face new challenges in the IT field. <br /> <br /> I'm based in Santa Marinella, Rome - Italy.",
     "#about .title": "About",
 
     "#contact .back__btn": "<i class='fa-solid fa-backward-step'></i> BACK",
@@ -19,8 +19,11 @@
     "#skills #api": "API",
     "#skills .back__btn": "<i class='fa-solid fa-backward-step'></i> BACK",
     "#skills .canvas__link": "Canvas",
+    "#skills #cms": "CMS",
     "#skills #core": "Core",
     "#skills .css__link": "CSS",
+    "#skills #design": "Design",
+    "#skills .figma__link": "Figma",
     "#skills .git__link": "Git",
     "#skills .html__link": "HTML",
     "#skills .js__link": "JS",
@@ -31,12 +34,13 @@
     "#skills .sass__link": "Sass",
     "#skills .title": "Skills",
     "#skills #tools": "Tools",
-    "#skills .webpack__link": "Webpack"
+    "#skills .webpack__link": "Webpack",
+    "#skills .wordpress__link": "WordPress"
   },
 
   "it": {
     "#about .back__btn": "<i class='fa-solid fa-backward-step'></i> INDIETRO",
-    "#about p": "Ciao! Mi chiamo Federico e mi piace realizzare interfacce utili e creative per il Web.<br /><br />&lt;&lt;Curiosità&gt;&gt; è la parola che mi descrive meglio: mi impegno per imparare il più possibile ogni giorno e questa attitudine mi sta aiutando, partendo da zero, a diventare uno sviluppatore Front-End autodidatta. Prima di intraprendere questo percorso nell'ottobre del 2022, ho maturato un'esperienza di più di 7 anni nel settore commerciale.<br /><br />Attualmente sono residente a Roma.",
+    "#about p": "Ciao! Mi chiamo Federico e mi piace realizzare interfacce utili e creative per il Web.<br /><br />Dopo aver maturato più di 7 anni anni di esperienza in ambito commerciale, ho sperimentato quanto sia soddisfacente far vivere un prodotto digitale in internet ed è nata in me l'ambizione di creare siti web che possano avere un impatto positivo sulla vita delle persone.<br /><br />&lt;&lt;Curiosità&gt;&gt; è la parola che mi descrive meglio: mi impegno per imparare il più possibile ogni giorno e questa attitudine mi ha permesso di diventare, partendo da zero, uno sviluppatore Front-End autodidatta. Attualmente lavoro come sviluppatore web in un'agenzia di marketing e sono motivato ad affrontare nuove sfide nell'ambito IT.<br /><br />Sono residente a Santa Marinella (RM).",
     "#about .title": "Info",
 
     "#contact .back__btn": "<i class='fa-solid fa-backward-step'></i> INDIETRO",
@@ -54,8 +58,11 @@
     "#skills #api": "API",
     "#skills .back__btn": "<i class='fa-solid fa-backward-step'></i> INDIETRO",
     "#skills .canvas__link": "Canvas",
+    "#skills #cms": "CMS",
     "#skills #core": "Principali",
     "#skills .css__link": "CSS",
+    "#skills #design": "Design",
+    "#skills .figma__link": "Figma",
     "#skills .git__link": "Git",
     "#skills .html__link": "HTML",
     "#skills .js__link": "JS",
@@ -66,6 +73,7 @@
     "#skills .sass__link": "Sass",
     "#skills .title": "Competenze",
     "#skills #tools": "Strumenti",
-    "#skills .webpack__link": "Webpack"
+    "#skills .webpack__link": "Webpack",
+    "#skills .wordpress__link": "WordPress"
   }
 }

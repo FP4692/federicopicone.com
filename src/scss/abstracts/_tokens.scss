@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./typography";
 
 // Tokens store the value of properties declared in components partials, thus you can set most of the style directly from here
@@ -9,11 +10,11 @@ $borderPrimary: 0.15rem solid var(--colorContent);
 $fontFamilyComfortaa: "Comfortaa", cursive;
 $fontFamilyGugi: "Gugi", cursive;
 
-$fontSizeH3: map-get(typography.$types, "h3");
-$fontSizeH4: map-get(typography.$types, "h4");
-$fontSizeT3: map-get(typography.$types, "t3");
-$fontSizeT4: map-get(typography.$types, "t4");
-$fontSizeT5: map-get(typography.$types, "t5");
+$fontSizeH3: map.get(typography.$types, "h3");
+$fontSizeH4: map.get(typography.$types, "h4");
+$fontSizeT3: map.get(typography.$types, "t3");
+$fontSizeT4: map.get(typography.$types, "t4");
+$fontSizeT5: map.get(typography.$types, "t5");
 
 $shapeSize: var(--shapeSize);
 
