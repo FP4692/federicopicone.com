@@ -5,6 +5,7 @@ import gitImg from "../assets/skills/git.svg";
 import githubImg from "../assets/skills/github.svg";
 import htmlImg from "../assets/skills/html.svg";
 import jsImg from "../assets/skills/js.svg";
+import nodeImg from "../assets/skills/nodejs.svg";
 import reactImg from "../assets/skills/react.svg";
 import sassImg from "../assets/skills/sass.svg";
 import webpackImg from "../assets/skills/webpack.svg";
@@ -22,6 +23,7 @@ export const assets = (() => {
       githubImg,
       htmlImg,
       jsImg,
+      nodeImg,
       reactImg,
       sassImg,
       webpackImg,
